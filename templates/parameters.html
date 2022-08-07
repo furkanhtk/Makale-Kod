@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block title %}Parameters list{% endblock %}
+{% block content %}
+
+
+<!--    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+
+    <script src="{{ url_for('static', filename='js/plotly-latest.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+
+
+    <h1 class="title">Parameters</h1>
+    {% if parameters %}
+    <form action="" method="post" name="parameter_list">
+    <table class="table is-striped is-fullwidth">
+      {% for parameter in parameters %}
+      <tr>
+        <td>
+            <label class="checkbox">
+              <input type="checkbox" name="parameter_ids" value="{{ parameter.id }}"/>
+        </label>
+            id: {{ parameter.id }} D: {{ parameter.date }}
+            F: {{ parameter.input_frequency }} P: {{ parameter.input_Power }}
+            G_ref: {{ parameter.g_ref }} D: {{ parameter.distance }}
+            Type: {{ parameter.antenna_type }} Mode: {{ parameter.mode }}
+            <a href = {{ url_for("parameter_page" ,parameter_id=parameter.id ) }}>Result</a>
+
+      </td>
+      </tr>
+      {% endfor %}
+    </table>
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-danger is-small" type="submit" name="Delete" value="Delete"> Delete </button>
+        </div>
+      </div>
+    </form>
+    {% endif %}
+{% endblock %}
+

@@ -1,0 +1,69 @@
+
+{% extends "layout.html" %}
+{% block title %}Parameter{% endblock %}
+{% block content %}
+    <h1 class="title">Parameter</h1>
+
+    <table class="table">
+      <tr>
+        <th>Id :</th>
+        <td>{{ parameter.id }}</td>
+      </tr>
+      <tr>
+        <th>Date :</th>
+        <td>{{ parameter.date }}</td>
+      </tr>
+      <tr>
+        <th>Frequency:</th>
+        <td>{{ parameter.input_frequency }}</td>
+      </tr>
+      <tr>
+        <th>Power :</th>
+        <td>{{ parameter.input_Power }}</td>
+      </tr>
+     <tr>
+        <th>G_ref :</th>
+        <td>{{ parameter.g_ref }}</td>
+      </tr>
+     <tr>
+        <th>Distance :</th>
+        <td>{{ parameter.distance }}</td>
+      </tr>
+     <tr>
+        <th>Antenna Type :</th>
+        <td>{{ parameter.antenna_type }}</td>
+      </tr>
+     <tr>
+        <th>Mode :</th>
+        <td>{{ parameter.mode }}</td>
+      </tr>
+         <tr>
+        <th>Sample size :</th>
+        <td>{{ parameter.sample_size }}</td>
+      </tr>
+         <tr>
+        <th>Measured power :</th>
+        <td>{{ parameter.raw_measured_power }}</td>
+      </tr>
+         <tr>
+        <th>Beamwidth :</th>
+        <td>{{ parameter.beamwidth }}</td>
+      </tr>
+         <tr>
+        <th>Bandwidth :</th>
+        <td>{{ parameter.bandwidth }}</td>
+      </tr>
+         <tr>
+        <th>Gain :</th>
+        <td>{{ parameter.antenna_gain }}</td>
+      </tr>
+         <tr>
+        <th>Directivity Tai and Pereira :</th>
+        <td>{{ parameter.directivity_tai }}</td>
+      </tr>
+         <tr>
+        <th>Directivity Kraus :</th>
+        <td>{{ parameter.directivity_kraus }}</td>
+      </tr>
+    </table>
+{% endblock %}

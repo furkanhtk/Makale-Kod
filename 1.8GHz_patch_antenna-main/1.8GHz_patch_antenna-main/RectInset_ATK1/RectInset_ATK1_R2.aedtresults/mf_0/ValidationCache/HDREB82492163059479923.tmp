@@ -1,0 +1,7 @@
+$begin 'ValidationCache'
+	$begin 'OneValidationResult'
+		Variation='FeedLength=\'3.8050000000000002cm\' FeedWidth=\'0.30599999999999999cm\' InsetDistance=\'1.3089999999999999cm\' InsetGap=\'0.153cm\' patchX=\'5.0700000000000003cm\' patchY=\'3.9399999999999995cm\' subH=\'0.1575cm\' subX=\'8.5999999999999996cm\' subY=\'12.130000000000001cm\''
+		Status=true
+		FileName='VIEB82492163059479924.tmp'
+	$end 'OneValidationResult'
+$end 'ValidationCache'

@@ -1,0 +1,16 @@
+        fig.add_trace(go.Barpolar(
+            r=[abs(min_value)],
+            theta=[0],
+            #width=[(bandwidth_angle2[0] + (361 - bandwidth_angle1[0]))],
+            width=[parameter.bandwidth],
+            opacity=0.3,
+            name='Bandwidth',
+            marker_color="royalblue"
+        ))
+
+
+
+<tr>
+        <th>Bandwidth :</th>
+        <td>{{ parameter.bandwidth }}</td>
+      </tr>

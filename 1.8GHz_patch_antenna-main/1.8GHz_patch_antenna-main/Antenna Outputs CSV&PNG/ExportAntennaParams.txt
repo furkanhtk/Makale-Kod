@@ -1,0 +1,30 @@
+Quantity                 Freq           Value              
+Max U                    1.8GHz         1.234225 mW/sr     
+Peak Directivity                        4.914148           
+Peak Gain                               1.678154           
+Peak Realized Gain                      1.551009           
+Peak System Gain                        1.551009           
+Radiated Power                          3.156212 mW        
+Accepted Power                          9.242352 mW        
+Incident Power                         10.000000 mW        
+System Power                           10.000000 mW        
+Radiation Efficiency                    0.341494           
+Total Efficiency                    undefined              
+System Efficiency                   undefined              
+Front to Back Ratio                   116.864763           
+Decay Factor                            0.000000           
+
+rE Field               Freq          Value            (Theta, Phi)        
+Total                  1.8GHz       964.679045 mV     (5deg,95deg)        
+X                                   171.518648 mV     (280deg,225deg)     
+Y                                   963.387988 mV     (360deg,345deg)     
+Z                                   489.389258 mV     (310deg,270deg)     
+Phi                                 963.387988 mV     (360deg,180deg)     
+Theta                               964.660536 mV     (355deg,270deg)     
+LHCP                                683.419328 mV     (5deg,115deg)       
+RHCP                                681.656218 mV     (5deg,70deg)        
+Ludwig3/X dominant                   96.412101 mV     (255deg,50deg)      
+Ludwig3/Y dominant                  964.678121 mV     (5deg,95deg)        
+CoPolar                           undefined           (nan,nan)           
+CrossPolar                        undefined           (nan,nan)           
+

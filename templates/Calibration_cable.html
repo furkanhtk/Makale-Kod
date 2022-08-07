@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+{% block title %}Parameters list{% endblock %}
+{% block content %}
+
+
+    <body>
+    <h1 class="title">Measurement</h1>
+    <form action="" method="post" name="parameter_edit">
+      <div class="field">
+        <label for="frequency" class="label">Frequency</label>
+        <div class="control">
+          <input type="text" name="frequency" class="input" required="required"/>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="power" class="label">Power</label>
+        <div class="control">
+          <input type="number" name="power" class="input" required="required"/>
+        </div>
+      </div>
+
+        <div class="field">
+        <label for="g_ref" class="label">Gref</label>
+        <div class="control">
+          <input type="number" name="g_ref" class="input" required="required"/>
+        </div>
+      </div>
+
+        <div class="field">
+        <label for="distance" class="label">Distance</label>
+        <div class="control">
+          <input type="number" name="distance" class="input" required="required"/>
+        </div>
+      </div>
+
+
+
+        <div class="field">
+        <label for="sample_size" class="label">Sample Size</label>
+        <div class="control">
+          <input type="number" name="sample_size" class="input" value="1000" required="required"/>
+        </div>
+      </div>
+
+
+        <div class="field">
+        <label for="antenna_type" class="label">Antenna Type</label>
+        <div class="control">
+          <input type="text" name="antenna_type" class="input" required="required"/>
+        </div>
+      </div>
+
+
+        <div class="field">
+        <label for="mode" class="label">Mode</label>
+        <div class="control">
+          <input type="text" name="mode" class="input" value="Calibration Cable" required="required"/>
+        </div>
+      </div>
+
+
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-danger is-large" type="submit" name="Start" value="Start"> Start Calibration Cable </button>
+        </div>
+      </div>
+    </form>
+
+
+</body>
+{% endblock %}
+

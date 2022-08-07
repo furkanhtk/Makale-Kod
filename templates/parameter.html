@@ -1,0 +1,80 @@
+
+{% extends "layout.html" %}
+{% block title %}Parameter{% endblock %}
+{% block content %}
+    <h1 class="title">Parameter</h1>
+
+    <table class="table">
+      <tr>
+        <th>Id :</th>
+        <td>{{ parameter.id }}</td>
+      </tr>
+      <tr>
+        <th>Date :</th>
+<!--        <td>{{ parameter.date }}</td>-->
+        <td style="word-break:break-all;">{{ parameter.date }}</td>
+      </tr>
+      <tr>
+        <th>Frequency:</th>
+        <td>{{ parameter.input_frequency }}</td>
+      </tr>
+      <tr>
+        <th>Power (db) :</th>
+        <td>{{ parameter.input_Power }}</td>
+
+      </tr>
+     <tr>
+        <th>G_ref :</th>
+<!--        <td>{{ parameter.g_ref }}</td>-->
+         <td> 2.2 </td>-->
+      </tr>
+     <tr>
+        <th>Distance :</th>
+        <td>{{ parameter.distance }}</td>
+      </tr>
+     <tr>
+        <th>Antenna Type :</th>
+<!--        <td>{{ parameter.antenna_type }}</td>-->
+         <td> Patch Antenna </td>-->
+      </tr>
+     <tr>
+        <th>Mode :</th>
+        <td>{{ parameter.mode }}</td>
+      </tr>
+         <tr>
+        <th>Sample size :</th>
+        <td>{{ parameter.sample_size }}</td>
+      </tr>
+         <tr>
+        <th>Measured power :</th>
+        <td>{{ parameter.raw_measured_power }}</td>
+      </tr>
+         <tr>
+        <th>Beamwidth :</th>
+        <td>{{ parameter.beamwidth }}</td>
+      </tr>
+         <tr>
+        <th>Gain :</th>
+        <td>{{ parameter.antenna_gain }}</td>
+      </tr>
+         <tr>
+        <th>Directivity Tai and Pereira :</th>
+        <td>{{ parameter.directivity_tai }}</td>
+      </tr>
+         <tr>
+        <th>Directivity Kraus :</th>
+        <td>{{ parameter.directivity_kraus }}</td>
+      </tr>
+    </table>
+
+
+        <div id="chart" class="chart"></div>
+
+
+    <script src="{{ url_for('static', filename='js/plotly-latest.min.js') }}"></script>
+<!--    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>-->
+    <script type="text/javascript">
+        var graphs = {{graphJSON | safe}};
+        Plotly.plot('chart',graphs,{});
+    </script>
+{% endblock %}
